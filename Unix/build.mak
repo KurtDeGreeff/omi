@@ -101,6 +101,10 @@ else
   DIRECTORIES += server agent
 endif
 
+ifeq ($(ENABLE_NATIVE_KITS),1)
+  DIRECTORIES += installbuilder
+endif
+
 TESTDIRS += tests/util
 TESTDIRS += tests/io
 TESTDIRS += tests/mof
